@@ -17,7 +17,7 @@ faceRight=true;
 
     body.setSize(sf::Vector2f(50.0f,75.0f));
     body.setOrigin((body.getSize()/2.0f));
-    body.setPosition(400.0f,300.0f);
+    body.setPosition(50.0f,300.0f);
     body.setTexture(texture);
 }
 
@@ -59,7 +59,7 @@ else{
         faceRight= false;
     }
 }
-if(!canJump) {
+if(canJump==false) {
     row = 2;
 }
 
@@ -90,9 +90,10 @@ if (direction.y < 0.0f){
 }
 else if(direction.y > 0.0f){
     velocity.y = 0.0f;
+
 }
 }
 void Player::setPosition_(){
-    body.setPosition(400.0f,300.0f);
+    body.setPosition(50.0f,300.0f);
 }
 
